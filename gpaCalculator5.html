@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head> 
+<title> Gpa Calculator </title>
+<script>
+function ConvertGrade(classGrade){
+var myClass = classGrade 
+if (myClass == "A" || myClass == "A-" || myClass ==  "A+"){
+//	classUnit = 4;
+return 4;
+}  
+if (myClass == "B" || myClass == "B-" || myClass ==  "B+"){
+//	classUnit = 3;
+return 3;
+}
+if (myClass == "C" || myClass == "C-" || myClass ==  "C+"){
+//	classUnit = 2;
+return 2;
+}
+if (myClass == "D" || myClass == "D-" || myClass ==  "D+"){
+//	classUnit = 1;
+return 1;
+}
+if (myClass == "F"){
+//	classUnit = 0;
+return 0;
+}
+}
+
+function gpaCalc(){
+var unit1 = ConvertGrade(calc.Class1.value);
+console.log(unit1);
+var unit2 = ConvertGrade(calc.Class2.value);
+console.log(unit2);
+var unit3 = ConvertGrade(calc.Class3.value);
+console.log(unit3);
+var unit4 = ConvertGrade(calc.Class4.value);
+console.log(unit4);
+var unit5 = ConvertGrade(calc.Class5.value);
+console.log(unit5);
+var unit6 = ConvertGrade(calc.Class6.value);
+console.log(unit6);
+var unit7 = ConvertGrade(calc.Class7.value);
+console.log(unit7);
+var unit8 = ConvertGrade(calc.Class8.value);
+console.log(unit8);
+
+
+var gpa = (Number(unit1) + Number(unit2) + Number(unit3) + Number(unit4) + Number(unit5) + Number(unit6) + Number(unit7) + Number(unit8))/8;
+calc.GPA.value = gpa;
+}
+function eraseFields(){
+calc.Class1.value = "";
+calc.Class2.value = "";
+calc.Class3.value = "";
+calc.Class4.value = "";
+calc.Class5.value = "";
+calc.Class6.value = "";
+calc.Class7.value = "";
+calc.Class8.value = "";
+calc.GPA.value = "";
+}
+</script>
+</head>
+
+<body>
+<h2><center>Gpa Calculator</center></center></h2>
+<form name = "calc">
+Computer Keyboarding: 
+<br><input type = "text" name = "Class1"><br>
+P.E: 
+<br><input type = "text" name = "Class2"><br>
+Algebra: 
+<br><input type = "text" name = "Class3"><br>
+Health: 
+<br><input type = "text" name = "Class4"><br>
+Computer Programming: 
+<br><input type = "text" name = "Class5"><br>
+English 09: 
+<br><input type = "text" name = "Class6"><br>
+Study Hall: 
+<br><input type = "text" name = "Class7"><br>
+Living Earth: 
+<br><input type = "text" name = "Class8"><br>
+<br>
+<input type = "button" name = "button1" value= "Calculate Gpa" onclick = "gpaCalc();">
+<input type = "button" name = "button2" value= "Erase Info" onclick = "eraseFields();">
+<br>
+<br><input type = "text" name = "GPA"><br>
+</form>
+</body>
+</html>

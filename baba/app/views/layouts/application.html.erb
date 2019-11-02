@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Baba</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+    <body>
+      <%= yield %>
+    	<header>
+
+    		<nav>
+    			<div>
+
+    				<a href="">p1</a>
+    				<a href="">p2</a>
+
+    			</div>
+
+
+    		</nav>
+    	</header>
+    	<main>
+
+
+
+    		<section class="personal_info">
+    			<div>
+    				<img src="file:///Users/hgpmac122/Desktop/teamsat/helloalberto.jpg" alt="">
+    			</div>
+    			<div>
+    				<label>Name:</label>
+    				<span>Alberto Soler</span>
+    			</div>
+
+    			<div>
+    				<label>Age:</label>
+    				<span>14</span>
+    			</div>
+    			<div>
+    				<label>Email:</label>
+    				<span>alberto.alfonso@hiddengeniusproject.org</span>
+
+    				x
+
+    			</div>
+
+    			<div>
+
+    				<label>Cohort:</label>
+    				<span>OAK 7</span>
+
+    			</div>
+
+    			<div>
+    				<label>Mission Statement:</label>
+    				<span>The hidden genius project trains and mentors black male youth in technology creation anterpornuarship and leadership skills to change their life and communities</span>
+
+    				<hr>
+
+    			</div>
+    		</section>
+    <section class="partner 1">
+    	<div>
+    		<h2>parner 1 video</h2>
+    		<video width="320" height="240" controls>
+      <source src="movie.mp4" type="video/mp4">
+      <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+    	</div>
+
+    </section>
+    		<section class="partner 2">
+    			<div>
+    				<h2>parner 2 video</h2>
+    				<video width="320" height="240" controls>
+      <source src="movie.mp4" type="video/mp4">
+      <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+
+    				<hr>
+
+
+    			</div>
+
+    		</section>
+    	</main>
+    	<footer>
+    		<form>
+    			Name:<br>
+    			<input type="text" name="first name" value="Alberto">
+    			<br>
+    			Email:<br>
+    			<input type="text" name="email" value="alberto.alfonso@giddengeniusproject.org">
+    			<br>
+    			Msg:
+    			<br>
+    			<textarea></textarea>
+    			<br>
+    			<input type="button" name="submit" value="submit">
+    		</form>
+    	</footer>
+  </body>
+</html>

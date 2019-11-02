@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+            <div class="topnav">
+                <a class="active" href="Cuban.html">Home</a>
+                <a href="loginpage.html">Log in</a>
+                <a href="signuppage.html">Sign up</a>
+                <a href="contacts.html">Contact</a>
+                <a href="rookieratings.html">Rookie Ratings</a>
+                <a href="AboutMe.html">About Me</a>
+                <a href="GpaCalculatorV2.html">GPA Calculator</a>
+                <a href="definition1.html">Definition1</a>
+                <a href="definition2.html">Definition2</a>
+                <a href="definition3.html">Definition3</a>
+                <a href="definition4.html">Definition4</a>
+                <a href="definition5.html">Definition5</a>
+              
+      
+
+</div>
+        <link rel="stylesheet" type="text/css" href="signup.css">
+        <script> 
+          
+            // Function to check Whether both passwords 
+            // is same or not. 
+            function checkPassword(form) { 
+                password1 = form.password1.value; 
+                password2 = form.password2.value; 
+  
+                // If password not entered 
+                if (password1 == '') 
+                    alert ("Please enter Password"); 
+                      
+                // If confirm password not entered 
+                else if (password2 == '') 
+                    alert ("Please enter confirm password"); 
+                      
+                // If Not same return False.     
+                else if (password1 != password2) { 
+                    alert ("\nPassword did not match: Please try again...") 
+ //                   return false; 
+                } 
+  
+                // If same return True. 
+                else{ 
+                    alert("Password Match: Welcome to 2k20 life!") 
+                    window.open('file:///Users/hgpmac122/Desktop/HTML%20Project/loginpage.html')
+                    return true; 
+                } 
+            } 
+        </script> 
+        <style> 
+            .gfg { 
+                font-size:40px; 
+                color:green; 
+                font-weight:bold; 
+                text-align:center; 
+            } 
+            .geeks { 
+                font-size:17px; 
+                text-align:center; 
+                margin-bottom:20px; 
+            } 
+        </style> 
+    </head> 
+    <SCRIPT>
+    function Submit(){
+    var bodyText="Your username is " + fmEmployment.txUsername.value + ". Your Password is " + fmEmployment.txPwd.value  + "."; 
+    window.alert(bodyText);
+    window.open("file:///Users/hgpmac122/Desktop/HTML%20Project/Cuban.html");
+    }
+</SCRIPT>
+    <body>
+        <center>
+
+
+
+ 
+        <div class = "gfg">@2k20</div> 
+        <div class = "geeks">A website for 2k players!!!</div> 
+        <form onSubmit = "return checkPassword(this)"> 
+        <table border = 1 align = "center"> 
+            <tr> 
+                <!-- Enter Username -->
+                <td>Username:</td> 
+                <td><input type = text name = name size = 25</td> 
+            </tr> 
+            <tr> 
+                <!-- Enter Password. -->
+                <td>Password:</td> 
+                <td><input type = password name = password1 size = 25></td> 
+            </tr> 
+            <tr> 
+                <!-- To Confirm Password. -->
+                <td>Confirm Password:</td> 
+                <td><input type = password name = password2 size = 25></td> 
+            </tr> 
+            <tr> 
+                <td colspan = 2 align = right> 
+                <input type = submit value = "Submit"></td> 
+            </tr> 
+        </table> 
+        </form>
+        <center/>
+    </body> 
+</html>                     

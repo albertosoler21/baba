@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+	<title>Calculate your GPA</title>
+	<link rel="stylesheet" type="text/css"href="calc.css">
+
+	<script>
+
+	function calcGPA(){
+ 
+ 		/* 1 */
+
+ 		var units1;
+
+		if(calc.Class1.value == "A-" || calc.Class1.value == "A" || calc.Class1.value == "A+"){
+			units1 = 4;
+		}
+		if(calc.Class1.value == "B-" || calc.Class1.value == "B" || calc.Class1.value == "B+"){
+			units1 = 3;
+		}
+		if(calc.Class1.value == "C-" || calc.Class1.value == "C" || calc.Class1.value == "C+"){
+			units1 = 2;
+			
+		}
+		if(calc.Class1.value == "D-" || calc.Class1.value == "D" || calc.Class1.value == "D+"){
+			units1 = 1;
+			
+		}
+		if(calc.Class1.value == "F"){
+			units1 = 0;
+			
+		}
+
+		/* 2 */
+
+		var units2;
+
+		if(calc.Class2.value == "A-" || calc.Class2.value == "A" || calc.Class2.value == "A+"){
+			units2 = 4;
+			
+		}
+		if(calc.Class2.value == "B-" || calc.Class2.value == "B" || calc.Class2.value == "B+"){
+			units2 = 3;
+			
+		} 
+		if(calc.Class2.value == "C-" || calc.Class2.value == "C" || calc.Class2.value == "C+"){
+			units2 = 2;
+			
+		}
+		if(calc.Class2.value == "D-" || calc.Class2.value == "D" || calc.Class2.value == "D+"){
+			units2 = 1;
+			
+		}
+		if(calc.Class2.value == "F"){
+			units2 = 0;
+			
+		}
+
+		/* 3 */
+
+		var units3;
+
+		if(calc.Class3.value == "A-" || calc.Class3.value == "A" || calc.Class3.value == "A+"){
+			units3 = 4;
+			
+		}
+		if(calc.Class3.value == "B-" || calc.Class3.value == "B" || calc.Class3.value == "B+"){
+			units3 = 3;
+			
+		}
+		if(calc.Class3.value == "C-" || calc.Class3.value == "C" || calc.Class3.value == "C+"){
+			units3 = 2;
+			
+		}
+		if(calc.Class3.value == "D-" || calc.Class3.value == "D" || calc.Class3.value == "D+"){
+			units3 = 1;
+			
+		}
+		if(calc.Class3.value == "F"){
+			units3 = 0;
+			
+		}
+
+		/* 4 */
+
+		var units4;
+
+		if(calc.Class4.value == "A-" || calc.Class4.value == "A" || calc.Class4.value == "A+"){
+			units4 = 4;
+			
+		}
+		if(calc.Class4.value == "B-" || calc.Class4.value == "B" || calc.Class4.value == "B+"){
+			units4 = 3;
+			
+		}
+		if(calc.Class4.value == "C-" || calc.Class4.value == "C" || calc.Class4.value == "C+"){
+			units4 = 2;
+			
+		}
+		if(calc.Class4.value == "D-" || calc.Class4.value == "D" || calc.Class4.value ==" D+"){
+			units4 = 1;
+			
+		}
+		if(calc.Class4.value == "F"){
+			units4 = 0;
+			
+		}
+
+		/* 5 */
+
+		var units5;
+
+		if(calc.Class5.value == "A-" || calc.Class5.value == "A" || calc.Class5.value == "A+"){
+			units5 = 4;
+			
+		}
+		if(calc.Class5.value == "B-" || calc.Class5.value == "B" || calc.Class5.value == "B+"){
+			units5 = 3;
+			
+		}
+		if(calc.Class5.value == "C-" || calc.Class5.value == "C" || calc.Class5.value == "C+"){
+			units5= 2;
+			
+		}
+		if(calc.Class5.value == "D-" || calc.Class5.value == "D" || calc.Class5.value == "D+"){
+			units5 = 1;
+			
+		}
+		if(calc.Class5.value == "F"){
+			units5 = 0;
+			
+		}
+
+		/* 6 */
+
+		var units6;
+
+		if(calc.Class6.value == "A-" || calc.Class6.value == "A" || calc.Class6.value == "A+"){
+			units6 = 4;
+			
+		}
+		if(calc.Class6.value == "B-" || calc.Class6.value == "B" || calc.Class6.value == "B+"){
+			units6 = 3;
+			
+		}
+		if(calc.Class6.value == "C-" || calc.Class6.value == "C" || calc.Class6.value == "C+"){
+			units6 = 2;
+			
+		}
+		if(calc.Class6.value == "D-" || calc.Class6.value == "D" || calc.Class6.value == "D+"){
+			units6 = 1;
+			
+		}
+		if(calc.Class6.value == "F"){
+			units6 = 0;
+			
+		}
+
+		/* 7 */
+
+		var units7;
+
+		if(calc.Class7.value == "A-" || calc.Class7.value == "A" || calc.Class7.value == "A+"){
+			units7 = 4;
+			
+		}
+		if(calc.Class7.value == "B-" || calc.Class7.value == "B" || calc.Class7.value == "B+"){
+
+			units7 = 3;
+			
+		}
+		if(calc.Class7.value == "C-" || calc.Class7.value == "C" || calc.Class7.value == "C+"){
+			units7 = 2;
+			
+		}
+		if(calc.Class7.value == "D-" || calc.Class7.value == "D" || calc.Class7.value == "D+"){
+			units7 = 1;
+			
+		}
+		if(calc.Class7.value == "F"){
+
+			var units7 = 0;
+			
+		}
+
+		/* 8 */
+
+		var units8;
+
+		if(calc.Class8.value == "A-" || calc.Class8.value == "A" || calc.Class8.value == "A+"){
+			units8 = 4;
+			
+		}
+		if(calc.Class8.value == "B-" || calc.Class8.value == "B" || calc.Class8.value == "B+"){
+			units8 = 3;
+			
+		}
+		if(calc.Class8.value == "C-" || calc.Class8.value == "C" || calc.Class8.value == "C+"){
+			units8 = 2;
+			
+		}
+		if(calc.Class8.value == "D-" || calc.Class8.value == "D" || calc.Class8.value == "D+"){
+			units8 = 1;
+			
+		}
+		if(calc.Class8.value == "F"){
+			units8 = 0;
+			
+		}
+		
+		/* 9 */
+		
+
+		var units9;
+
+		if(calc.Class9.value == "A-" || calc.Class8.value == "A" || calc.Class8.value == "A+"){
+			units9 = 4;
+			
+		}
+		if(calc.Class9.value == "B-" || calc.Class8.value == "B" || calc.Class8.value == "B+"){
+			units9 = 3;
+			
+		}
+		if(calc.Class9.value == "C-" || calc.Class8.value == "C" || calc.Class8.value == "C+"){
+			units9 = 2;
+			
+		}
+		if(calc.Class9.value == "D-" || calc.Class8.value == "D" || calc.Class8.value == "D+"){
+			units9 = 1;
+			
+		}
+		if(calc.Class9.value == "F"){
+			units9 = 0;
+			
+		}
+
+
+
+
+
+		var gpa = (Number(units1) + Number(units2) + Number(units3) + Number(units4) + Number(units5) + Number(units6) + Number(units7) + Number(units8))/8;
+
+		
+		calc.GPA.value = gpa;
+
+	
+
+	}
+	function eraseFields(){
+
+		calc.Class1.value = "";
+		calc.Class2.value = "";
+		calc.Class3.value = "";
+		calc.Class4.value = "";
+		calc.Class5.value = "";
+		calc.Class6.value = "";
+		calc.Class7.value = "";
+		calc.Class8.value = "";
+		calc.GPA.value = "";
+
+	}
+
+
+</script>
+
+</head>
+
+<body>
+
+	<h2><center>Gpa Calculator</center></center></h2>
+
+	<form name = "calc">
+
+		Math: 
+		<br><input type = "text" name = "Class1"><br>
+
+		Engineering: 
+		<br><input type = "text" name = "Class2"><br>
+
+		Humanities: 
+		<br><input type = "text" name = "Class3"><br>
+
+		English: 
+		<br><input type = "text" name = "Class4"><br>
+
+		
+
+		<br>
+
+
+		<input type = "button" name = "button1" value= "Calculate Gpa" onclick = "calcGPA();">
+		<input type = "button" name = "button2" value= "Erase Info" onclick = "eraseFields();">
+
+		<br>
+
+		<br><input type = "text" name = "GPA"><br>
+
+	</form>
+
+</body>
+	
+</body>
+</html>
+Reply
+Forward
